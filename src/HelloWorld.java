@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class HelloWorld {
     public static void main (String[] args){
         System.out.println("Hello World");
@@ -24,6 +25,30 @@ public class HelloWorld {
         System.out.println("Y is now: " + y);
 
 //        var class = "something";
+        int newX = 4;
+        newX = newX +5;
+
+        System.out.println(newX);
+        System.out.println(" ");
+        Scanner myScannerObject = new Scanner(System.in);
+
+        System.out.println("Input something?>");
+
+        String myUserString = myScannerObject.nextLine();
+
+        System.out.println(myUserString);
+        System.out.println(" ");
+        double pi = 3.14159;
+        System.out.println(" ");
+        System.out.println("The value of pi is " + pi);
+
+        Scanner age = new Scanner(System.in);
+
+        System.out.println(" ");
+        System.out.println("Hold is your kid?");
+        String kidAge = age.nextLine();
+        System.out.printf("Oh they are %s years old?", kidAge);
+
 
     }
 }
