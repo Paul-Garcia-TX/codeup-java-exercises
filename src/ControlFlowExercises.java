@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ControlFlowExercises {
     public static void main (String [] args){
         System.out.println("Test");
@@ -31,15 +33,32 @@ public class ControlFlowExercises {
 //        }
 
 //        fizz buzz
-        for(int i = 1; i < 100; i++){
-            if(i % 3 == 0){
-                System.out.println(i + " fizz");
-            }
-            else if(i % 5 == 0){
-                System.out.println(i + " buzz");
-            }
-//            System.out.println(i);
+//        for(int i = 1; i < 100; i++){
+//            if(i % 3 == 0){
+//                System.out.println(i + " fizz");
+//            }
+//            else if(i % 5 == 0){
+//                System.out.println(i + " buzz");
+//            }
+////            System.out.println(i);
+//        }
+        Scanner aNumber = new Scanner(System.in);
+
+        System.out.println("Please enger a number");
+
+        String myUserString = aNumber.nextLine();
+
+        int myUserInt = Integer.parseInt(myUserString);
+
+        System.out.println("Number| Squared | Cubed");
+        for (int i = 1; i <= myUserInt; i ++){
+            int square = i * i;
+            int cubed = i * i * i;
+            System.out.println(i + "     |   " + square + "     |   " + cubed);
         }
+
+
+
     }
 }
 
