@@ -56,7 +56,9 @@ public class ControlFlowExercises {
             int cubed = i * i * i;
             System.out.println(i + "     |   " + square + "     |   " + cubed);
         }
+        String texasName = "Texas, yeehaw";
 
+        System.out.println("texasName.indexOf(\"texasName.indexOf yee is\" + texasName.indexOf('yee')) = " + texasName.indexOf("texasName.indexOf yee is" + texasName.indexOf("yee")));
 
 
     }
