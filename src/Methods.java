@@ -3,9 +3,11 @@ import java.util.Scanner;
 public class Methods {
 
     public static void main(String[] args) {
-        sayHello(2);
-        arithmetic(3);
-        getInteger(1,10);
+//        sayHello(2);
+//        arithmetic(3);
+//        getInteger(1,10);
+//        factorial(1);
+        dice();
     }
     public static void sayHello ( int times){
         for (int i = 0; i < times; i += 1) {
@@ -37,7 +39,7 @@ public class Methods {
 
 
     }
-    public static int factorial(int min, int max){
+    public static int factorial(int min){
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter a positive number");
@@ -49,6 +51,18 @@ public class Methods {
             return n * factorial(n - 1);
 
         }
+
+    }
+    public static void dice (){
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("How many sides of the dice are there?");
+
+        int sides = sc.nextInt();
+
+        int dice = (int)(Math.random()* sides) + 1;
+        System.out.println("Rolling");
+        System.out.println("You rolled: " + dice);
 
     }
 
