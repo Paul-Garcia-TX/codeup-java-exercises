@@ -1,7 +1,9 @@
+package Shapes;
+
 import java.util.Scanner;
-public class Shapes {
+public class Circle {
     public static void main (String[] args){
-        Circle myCircle = new Circle();
+        Circles myCircle = new Circles();
         System.out.println("The radius of my circle is: "+ myCircle.radius);
         System.out.println("The area of my circle is: "+ myCircle.getArea());
         System.out.println("The circumference of my circle is: " + myCircle.getCircumference());
@@ -9,10 +11,10 @@ public class Shapes {
     }
 
 
-    public static class Circle {
+    public static class Circles {
         private double radius;
 
-        public Circle() {
+        public Circles() {
             Scanner input = new Scanner(System.in);
             System.out.println("What is the radius of your circle?");
             this.radius = input.nextDouble();
