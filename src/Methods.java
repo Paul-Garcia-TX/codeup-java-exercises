@@ -62,6 +62,7 @@ public class Methods {
 
         int dice = (int)(Math.random()* sides) + 1;
         System.out.println("Rolling");
+        System.out.println(" ... ");
         System.out.println("You rolled: " + dice);
 
     }
