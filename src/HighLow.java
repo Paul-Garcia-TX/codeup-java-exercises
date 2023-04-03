@@ -11,19 +11,21 @@ public class HighLow {
         System.out.println("Guess if a number I will pick" );
 
         Scanner input = new Scanner(System.in);
+        for (int i = 1; i < 4; i++) {
+            System.out.println("Attempt #" + i + ":");
+            int userInput = input.nextInt();
 
-        int userInput = input.nextInt();
+            if (userInput > randomNum) {
+                System.out.println("Oh that was too high.");
+            } else if (userInput < randomNum) {
+                System.out.println("Oh that was too low");
+            } else {
+                System.out.println("BOOM! NAILED IT!");
+                return;
+            }
 
-        if (userInput > randomNum){
-            System.out.println("Oh that was too high it was actually: " + randomNum);
-        } else if (userInput < randomNum) {
-            System.out.println("Oh that was too low it was actually:  " + randomNum);
         }
-        else {
-            System.out.println("BOOM! NAILED IT!");
-        }
-
-
+        System.out.println("Sorry, you ran out of guess it was actually: "+ randomNum);
     }
 
 
