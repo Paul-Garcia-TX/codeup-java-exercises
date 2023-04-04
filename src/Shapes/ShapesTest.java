@@ -6,13 +6,12 @@ public class ShapesTest {
 
     public static void main (String[] args){
 
+        Measurable shape;
 
-        Rectangle box1 = new Rectangle(20,20);
-        System.out.println("Box 1 perimeter: " + box1.getPerimeter());
-        System.out.println("Box 1 area: " + box1.getArea());
-        Square box2 = new Square(20);
-        System.out.println("Box 2 perimeter: " + box2.perimeter());
-        System.out.println("Box 2 area: "+ box2.area());
+        shape = new Rectangle(5,4);
+        System.out.println("Area of rectangle: " + shape.getArea());
+        System.out.println("Perimeter of rectangle: " + shape.getPerimeter());
+
 
     }
 }
