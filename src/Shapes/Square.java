@@ -1,14 +1,22 @@
 package Shapes;
 
-import java.util.Scanner;
+public class Square extends Rectangle {
+    protected static double side;
 
-public class Square {
-    protected double side;
-
-    public class Square(){
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("What is the measurement of one of the sides of the square?");
-        side = scanner.nextDouble();
+    public Square(double side){
+        super(side, side);
+        this.side = side;
     }
+
+    public double perimeter(){
+        double perimeter = side + side + side + side;
+
+        return perimeter;
+    }
+
+    public double area(){
+        double area = side * 2;
+        return area;
+    }
+
 }
