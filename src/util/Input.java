@@ -53,7 +53,7 @@ public class Input {
             input = scanner.nextInt();
             scanner.nextLine(); // clear the input buffer
 
-        } catch (InputMismatchException e) {
+        } catch (NumberFormatException e) {
             System.out.println("That does not work dude.");
             scanner.nextLine(); // clear the input buffer
 
